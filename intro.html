@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="intro.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Memory Match!</h1>
+    </header>
+    <main>
+        <section id="initial-setup">
+            <h2>Select number of cards:</h2>
+            <input type="number" id="card-count" min=4 max=52 value=52>
+            <h2>Select game mode:</h2>
+            <button id="computer-btn">Play against the computer</button>
+            <button id="player-btn">Play against another player</button>
+        </section>
+        <section id="computer-setup" class="hidden">
+            <h2>Select difficulty level:</h2>
+            <button id="easy-btn">Easy</button>
+            <button id="medium-btn">Medium</button>
+            <button id="hard-btn">Hard</button>
+        </section>
+        <section id="player-setup" class="hidden">
+            <h2>Enter player names:</h2>
+            <input type="text" id="player1-name" placeholder="Player 1 Name">
+            <input type="text" id="player2-name" placeholder="Player 2 Name">
+        </section>
+        <button id="start-btn" class="hidden">Start Game</button>
+    </main>
+    <footer>
+        <p>&copy; 2025 Drishya's Memory Matching Game</p>
+    </footer>
+</body>
+</html>
